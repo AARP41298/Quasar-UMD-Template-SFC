@@ -1,11 +1,11 @@
-# Quasar UMD Template
+# Quasar UMD SFC Template
 
 Simple SPA-like Quasar v2 / Vue v3 template for quick start. 
 No CLI/Webpack/Node required.
 
 Contains landing page with few sections, login dialog and if we are logged in, admin backend with 4 sample pages, and 4 dumb components. Following that pattern, you can add as many as you want. Every page or component is in separate file. Also, this starter template contains Vue Router and simple store (for user state). After login, fake user token is saved in local storage so user remains logged in until sign out manually.
 
-Online demo: http://quasar.rf.gd/
+
 
 
 ### Prerequisites
@@ -16,6 +16,13 @@ None.
 ### Installation
 
 Just copy files and run ;)
+
+Use http server in SPA mode
+
+```
+npm install --global serve
+serve -s .
+```
 
 Note: files must be placed in the root of web server. If they are placed in a subdirectory, for example //localhost/something/ then it will not work. In that case, the import paths must be changed and the Vue Router base directory must be set.
 
@@ -37,5 +44,6 @@ To have code highlighting and intellisense inside template literals, I suggest t
 ## Other
 
 Similar project but without Quasar, just vanilla Vue, can be found here:  
+No-sfc Online demo: http://quasar.rf.gd/
 GitHub: https://github.com/SaleCar/Vue3-QuickStart  
 Demo: http://vue3quickstart.rf.gd
