@@ -7,10 +7,15 @@ import router from '/router.mjs'
 router.beforeEach(async (to, from) => {
     if (to.path == '/') return true
     //no match - goto root
-    if (!to.matched.length) {to.fullPath = '/'; return true}
+    if (!to.matched.length) {
+        to.fullPath = '/';
+        return true
+    }
     //if not logged -> login dialog
     if (!user.token) {
-        setTimeout(function() {user.loginDialog.show = true}, 200)
+        setTimeout(function () {
+            user.loginDialog.show = true
+        }, 200)
         await user.token
     }
 })
